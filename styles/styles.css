@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Raileway";
+  src: url("/styles/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 40px 0 40px;
+  font-family: "Raileway", sans-serif;
+  color: black;
+}
+
+/* Style Header */
+
+header {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.menu {
+  height: 99%;
+}
+.menu ul {
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  margin: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+}
+.menu ul li:nth-child(1) {
+  height: 100%;
+  border-top: #0065fc 2.5px solid;
+}
+#lien1 {
+  color: #0065fc;
+}
+
+#lien3 {
+  font-weight: 700;
+  color: #0065fc;
+}
+
+/* Style filtres */
+
+.filtres h1 {
+  font-size: 1.5rem;
+}
