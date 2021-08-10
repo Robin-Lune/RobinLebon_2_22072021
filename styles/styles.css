@@ -65,7 +65,7 @@ header {
 
 /* Style filtres */
 
-.filterSection h1 {
+.filter-section h1 {
   font-size: 1.5rem;
 }
 
@@ -105,4 +105,46 @@ header {
   color: rgb(250, 250, 250);
   border-radius: 0 15px 15px 0;
   cursor: pointer;
+}
+
+.filter-section__filters {
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.filter-section__filters__title {
+  font-size: large;
+  margin: 0 20px 0 0;
+}
+
+.filter-section__filters__bubble {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  font-weight: bold;
+}
+
+.filter-section__filters__bubble__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #deebff;
+  border-radius: 50%;
+  margin: -2px;
+}
+.filter-section__filters__bubble__icon-wrapper__icon {
+  color: #0065fc;
+}
+
+.filter-section__filters__bubble__text {
+  margin: 0 10px;
+  font-weight: 800;
 }
