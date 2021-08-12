@@ -195,7 +195,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  width: 880px;
+  width: 855px;
   border-radius: 20px;
 }
 
@@ -216,7 +216,7 @@ header {
   text-transform: none;
   color: black;
 }
-a:visited {
+.card-link:visited {
   color: black;
 }
 
@@ -333,4 +333,5 @@ a:visited {
 
 .activite-container {
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
 }
