@@ -330,3 +330,7 @@ a:visited {
 .activite-title {
   margin: 30px 0;
 }
+
+.activite-container {
+  grid-template-columns: repeat(4, 1fr);
+}
