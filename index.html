@@ -7,6 +7,12 @@
     <title>RESERVIA | ROBIN LEBON</title>
     <link rel="stylesheet" href="/styles/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -19,6 +25,7 @@
         </ul>
       </nav>
     </header>
+    <!-- FILTERS -->
     <div class="filter-section">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en plein nature</p>
@@ -28,64 +35,290 @@
         <button class="filter-section__search__btn">Rechercher</button>
       </form>
       <div class="filter-section__filters">
-        <h2 class="filter-section__filters__title">Filtres</h2>
-        <div class="filter-section__filters__bubble">
-          <div class="filter-section__filters__bubble__icon-wrapper">
-            <i
-              class="
-                fas
-                fa-money-bill-wave
-                filter-section__filters__bubble__icon-wrapper__icon
-              "
-            ></i>
+        <h2 class="filters__title">Filtres</h2>
+        <div class="filters__bubble">
+          <div class="bubble__icon-wrapper">
+            <i class="fas fa-money-bill-wave icon-wrapper__icon"></i>
           </div>
-          <div class="filter-section__filters__bubble__text">
+          <div class="bubble__text">
             <p>Économique</p>
           </div>
         </div>
-        <div class="filter-section__filters__bubble">
-          <div class="filter-section__filters__bubble__icon-wrapper">
-            <i
-              class="
-                fas
-                fa-child
-                filter-section__filters__bubble__icon-wrapper__icon
-              "
-            ></i>
+        <div class="filters__bubble">
+          <div class="bubble__icon-wrapper">
+            <i class="fas fa-child icon-wrapper__icon"></i>
           </div>
-          <div class="filter-section__filters__bubble__text">
+          <div class="bubble__text">
             <p>Familial</p>
           </div>
         </div>
-        <div class="filter-section__filters__bubble">
-          <div class="filter-section__filters__bubble__icon-wrapper">
-            <i
-              class="
-                fas
-                fa-heart
-                filter-section__filters__bubble__icon-wrapper__icon
-              "
-            ></i>
+        <div class="filters__bubble">
+          <div class="bubble__icon-wrapper">
+            <i class="fas fa-heart icon-wrapper__icon"></i>
           </div>
-          <div class="filter-section__filters__bubble__text">
+          <div class="bubble__text">
             <p>Romantique</p>
           </div>
         </div>
-        <div class="filter-section__filters__bubble">
-          <div class="filter-section__filters__bubble__icon-wrapper">
-            <i
-              class="
-                fas
-                fa-dog
-                filter-section__filters__bubble__icon-wrapper__icon
-              "
-            ></i>
+        <div class="filters__bubble">
+          <div class="bubble__icon-wrapper">
+            <i class="fas fa-dog icon-wrapper__icon"></i>
           </div>
-          <div class="filter-section__filters__bubble__text">
+          <div class="bubble__text">
             <p>Animaux autorisés</p>
           </div>
         </div>
       </div>
+      <div class="filter-section__results">
+        <span class="results__icon-wrapper">
+          <i class="fas fa-info icon-wrapper__icon icon--info"></i
+        ></span>
+        <p class="results__text">
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
     </div>
+    <!-- SECTION 1 HEBERGEMENT -->
+    <section class="hebergement">
+      <div class="container container--hebergement">
+        <h2 class="container__title">Hébergements à Marseille</h2>
+        <div class="card-container">
+          <!-- card 1 -->
+          <a href="#" class="card">
+            <div class="card-container__card">
+              <div class="card__image-container">
+                <img
+                  src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt=""
+                  class="card__image"
+                />
+              </div>
+              <div class="card__text">
+                <p class="card__text__title">Auberge la cannebière</p>
+                <p class="card__text__description">
+                  Nuit à partir de <span class="description__price">25€</span>
+                </p>
+                <span class="card__text__notation">
+                  <i class="fas fa-star notation__icon--filled"></i>
+                  <i class="fas fa-star notation__icon--filled"></i>
+                  <i class="fas fa-star notation__icon--filled"></i>
+                  <i class="fas fa-star notation__icon--filled"></i>
+                  <i class="fas fa-star notation__icon--empty"></i>
+                </span>
+              </div>
+            </div>
+          </a>
+          <!-- card 2-->
+
+          <div class="card-container__card">
+            <div class="card__image-container">
+              <img
+                src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt=""
+                class="card__image"
+              />
+            </div>
+            <div class="card__text">
+              <p class="card__text__title">Hôtel du port</p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">52€</span>
+              </p>
+              <span class="card__text__notation">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+              </span>
+            </div>
+          </div>
+          <!-- card 3 -->
+
+          <div class="card-container__card">
+            <div class="card__image-container">
+              <img
+                src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                alt=""
+                class="card__image"
+              />
+            </div>
+            <div class="card__text">
+              <p class="card__text__title">Hôtel Les mouettes</p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">76€</span>
+              </p>
+              <span class="card__text__notation">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--empty"></i>
+              </span>
+            </div>
+          </div>
+          <!-- card 4-->
+          <div class="card-container__card">
+            <div class="card__image-container">
+              <img
+                src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                alt=""
+                class="card__image"
+              />
+            </div>
+            <div class="card__text">
+              <p class="card__text__title">Hôtel de la mer</p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">46€</span>
+              </p>
+              <span class="card__text__notation">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--empty"></i>
+                <i class="fas fa-star notation__icon--empty"></i>
+              </span>
+            </div>
+          </div>
+          <!-- card 5 -->
+
+          <div class="card-container__card">
+            <div class="card__image-container">
+              <img
+                src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                alt=""
+                class="card__image"
+              />
+            </div>
+            <div class="card__text">
+              <p class="card__text__title">Auberge Le panier</p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">23€</span>
+              </p>
+              <span class="card__text__notation">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--empty"></i>
+              </span>
+            </div>
+          </div>
+          <!-- card 6 -->
+
+          <div class="card-container__card">
+            <div class="card__image-container">
+              <img
+                src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                alt=""
+                class="card__image"
+              />
+            </div>
+            <div class="card__text">
+              <p class="card__text__title">Hôtel chez Amina</p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">96€</span>
+              </p>
+              <span class="card__text__notation">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <p class="container__more">Afficher plus</p>
+      </div>
+      <!-- populaire -->
+      <div class="container container--populaire">
+        <div class="container__title-wrapper">
+          <h2 class="container__title">Les plus populaires</h2>
+          <i class="fas fa-chart-line title-wrapper-icon"></i>
+        </div>
+        <div class="card-container">
+          <!-- populaire card 1 -->
+          <div class="card-container__card card--populaire">
+            <div class="card__image-container image-container--populaire">
+              <img
+                src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt=""
+                class="card__image image--populaire"
+              />
+            </div>
+            <div class="card__text text--populaire">
+              <p class="card__text__title">Hôtel Le soleil du matin</p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">128€</span>
+              </p>
+              <span class="card__text__notation notation--populaire">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+              </span>
+            </div>
+          </div>
+          <!-- populaire card 2 -->
+          <div class="card-container__card card--populaire">
+            <div class="card__image-container image-container--populaire">
+              <img
+                src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt=""
+                class="card__image image--populaire"
+              />
+            </div>
+            <div class="card__text text--populaire">
+              <p class="card__text__title text__title--populaire">
+                Au ceur de l'eau chambre d'hotes
+              </p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">71€</span>
+              </p>
+              <span class="card__text__notation notation--populaire">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--empty"></i>
+              </span>
+            </div>
+          </div>
+          <!-- populaire card 3 -->
+          <div class="card-container__card card--populaire">
+            <div class="card__image-container image-container--populaire">
+              <img
+                src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt=""
+                class="card__image image--populaire"
+              />
+            </div>
+            <div class="card__text text--populaire">
+              <p class="card__text__title text__title--populaire">
+                Hôtel Tout bleu et Blanc
+              </p>
+              <p class="card__text__description">
+                Nuit à partir de <span class="description__price">68€</span>
+              </p>
+              <span class="card__text__notation notation--populaire">
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--filled"></i>
+                <i class="fas fa-star notation__icon--empty"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Activite -->
+    <section>
+      <h2 class="activite-title">Activités à Marseille</h2>
+      <div class="activite-container">
+        <div class="activite-card"></div>
+      </div>
+    </section>
   </body>
 </html>
