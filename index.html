@@ -15,16 +15,21 @@
     />
   </head>
   <body>
+    <!-- NAVIGATION -->
     <header>
-      <img src="/images/logo/Reservia.svg" alt="Reservia logo" />
+      <a href="index.html" id="logo-link">
+        <img src="/images/logo/Reservia.svg" alt="Reservia logo" / id="Logo">
+      </a>
+
       <nav class="menu">
         <ul>
-          <li><a href="#hebergements" id="lien1">Hébergements</a></li>
-          <li><a href="#activites">Activités</a></li>
-          <li><a href="#" id="lien3">S'inscrire</a></li>
+          <li><a href="#hebergements" id="link1">Hébergements</a></li>
+          <li><a href="#activites" id="link2">Activités</a></li>
         </ul>
       </nav>
+      <a href="#" id="link3">S'inscrire</a>
     </header>
+
     <!-- FILTERS -->
     <div class="filter-section">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -32,7 +37,10 @@
       <form method="get" class="filter-section__search">
         <span><i class="fas fa-map-marker-alt"></i></span>
         <input type="search" placeholder="Marseille, France" />
-        <button class="filter-section__search__btn">Rechercher</button>
+        <button class="filter-section__search__btn">
+          <p id="search-btn-text">Rechercher</p>
+          <i class="fas fa-search" id="search-btn-icon"></i>
+        </button>
       </form>
       <div class="filter-section__filters">
         <h2 class="filters__title">Filtres</h2>
@@ -78,13 +86,13 @@
         </p>
       </div>
     </div>
-    <!-- SECTION 1 HEBERGEMENT -->
+
+    <!-- HEBERGEMENT -->
     <section class="hebergement" id="hebergements">
       <div class="container container--hebergement">
         <h2 class="container__title">Hébergements à Marseille</h2>
         <div class="card-container">
           <!-- card 1 -->
-
           <div class="card-container__card">
             <a href="#Aubergelacannebière" class="card-link">
               <div class="card__image-container">
@@ -111,7 +119,6 @@
           </div>
 
           <!-- card 2-->
-
           <div class="card-container__card">
             <a href="#hotelduport" class="card-link">
               <div class="card__image-container">
@@ -137,7 +144,6 @@
             </a>
           </div>
           <!-- card 3 -->
-
           <div class="card-container__card">
             <a href="#hotellesmouettes" class="card-link">
               <div class="card__image-container">
@@ -188,7 +194,6 @@
             </a>
           </div>
           <!-- card 5 -->
-
           <div class="card-container__card">
             <a href="#aubergelepanier" class="card-link">
               <div class="card__image-container">
@@ -214,7 +219,6 @@
             </a>
           </div>
           <!-- card 6 -->
-
           <div class="card-container__card">
             <a href="#hotelchezamina" class="card-link">
               <div class="card__image-container">
@@ -240,9 +244,10 @@
             </a>
           </div>
         </div>
-        <p class="container__more">Afficher plus</p>
+        <a href="#more"><p class="container__more">Afficher plus</p></a>
       </div>
-      <!-- populaire -->
+
+      <!-- POPULAIRE -->
       <div class="container container--populaire">
         <div class="container__title-wrapper">
           <h2 class="container__title">Les plus populaires</h2>
@@ -329,8 +334,9 @@
         </div>
       </div>
     </section>
-    <!-- Section Activite -->
-    <section>
+
+    <!-- ACTIVITES -->
+    <section id="activites">
       <h2 class="activite-title">Activités à Marseille</h2>
       <div class="activite-container">
         <!-- activite card 1  -->
@@ -407,7 +413,8 @@
         </div>
       </div>
     </section>
-    <!-- Footer -->
+
+    <!-- FOOTER -->
     <footer>
       <div class="links-footer">
         <h3>A propos</h3>
