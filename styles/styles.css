@@ -113,6 +113,9 @@ header {
 #search-btn-icon {
   display: none;
 }
+#search-btn-text {
+  background-color: #0065fc;
+}
 
 .filter-section__filters {
   display: flex;
