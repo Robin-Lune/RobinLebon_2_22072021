@@ -374,9 +374,12 @@ header {
 }
 #card2 {
   grid-area: card2;
+  height: 235px;
 }
 #card3 {
   grid-area: card3;
+  height: 165px;
+  margin-top: 40px;
 }
 #card4 {
   grid-area: card4;
@@ -576,6 +579,15 @@ footer a {
   .activite-card {
     max-height: 190px;
   }
+  #card2 {
+    grid-area: card2;
+    height: auto;
+  }
+  #card3 {
+    grid-area: card3;
+    height: auto;
+    margin-top: 0;
+  }
   /* FOOTER MOBILE */
   footer {
     flex-direction: column;
@@ -715,6 +727,15 @@ footer a {
   #card5 img {
     object-position: 55% 25%;
     /* object-fit: fill; */
+  }
+  #card2 {
+    grid-area: card2;
+    height: auto;
+  }
+  #card3 {
+    grid-area: card3;
+    height: auto;
+    margin-top: 0;
   }
   .activite-card {
     max-height: 190px;
