@@ -40,14 +40,15 @@
   <body>
     <!-- NAVIGATION -->
     <header>
-      <a href="index.html" id="logo-link">
+      <div id="logo-link">
         <img src="images/logo/Reservia.svg" alt="Reservia logo" id="Logo" />
-      </a>
-
+      </div>
       <nav class="menu">
         <ul>
-          <li><a href="#hebergements" id="link1">Hébergements</a></li>
-          <li><a href="#activites" id="link2">Activités</a></li>
+          <li id="grid-link1">
+            <a href="#hebergements" id="link1">Hébergements</a>
+          </li>
+          <li id="grid-link2"><a href="#activites" id="link2">Activités</a></li>
         </ul>
       </nav>
       <a href="#" id="link3">S'inscrire</a>
@@ -269,7 +270,7 @@
             </a>
           </div>
         </div>
-        <a href="#more"><p class="container__more">Afficher plus</p></a>
+        <a href="#more" class="container__more">Afficher plus</a>
       </div>
 
       <!-- POPULAIRE -->
@@ -361,7 +362,7 @@
     </section>
 
     <!-- ACTIVITES -->
-    <section id="activites">
+    <section id="activites" class="activites">
       <h2 class="activite-title">Activités à Marseille</h2>
       <div class="activite-container">
         <!-- activite card 1  -->

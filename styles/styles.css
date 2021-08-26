@@ -8,11 +8,16 @@
 body {
   font-family: "Raleway", sans-serif;
   color: black;
-  max-width: 1440px;
+}
+
+header,
+.filter-section,
+.hebergement,
+.activites {
+  max-width: 1400px;
   padding: 0 25px 0 25px;
   margin: auto;
 }
-
 /* Style Header */
 
 header {
@@ -355,6 +360,9 @@ header {
 }
 
 /* ACTIVITE  */
+.activites {
+  margin-bottom: 60px;
+}
 .activite-title {
   margin: 50px 0 20px 0;
 }
@@ -418,23 +426,20 @@ figcaption {
   object-fit: cover;
 }
 
-/* #card3 figure {
-  height: 90%;
-} */
-
-/* STYLE FOOTER */
+/* FOOTER */
 
 footer {
+  background-color: #f2f2f2;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 60px -50px 0 -50px;
-  background-color: #f2f2f2;
+  justify-content: center;
 }
 
 .links-footer {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 60px;
   width: 360px;
 }
 
@@ -450,30 +455,58 @@ footer a {
 /* STYLE MOBILE  */
 
 @media screen and (max-width: 767px) {
-  body {
-    width: 100vw;
+  header,
+  .filter-section,
+  .hebergement,
+  .activites {
+    width: 100%;
     padding: 0;
+    margin: auto;
   }
+
   header {
-    flex-wrap: wrap;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55px 55px;
+    grid-template-areas:
+      "logo sign-up"
+      "menu menu";
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .menu,
+  ul {
+    width: 100%;
   }
   #Logo,
   #link3 {
     padding: 15px 25px;
+    margin: 0;
   }
+  #logo-link {
+    grid-area: logo;
+  }
+  #link3 {
+    grid-area: sign-up;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .menu {
     order: 3;
     margin: 0;
     padding: 0;
     flex: 1;
+    grid-area: menu;
   }
   .menu ul li {
     margin: 0;
+    padding: 0;
     flex: 1;
     justify-content: center;
+    height: 100%;
   }
   .menu ul li:nth-child(1) {
     border-top: none;
@@ -602,12 +635,7 @@ footer a {
 }
 
 /* STYLE TABLET */
-@media screen and (min-width: 768px) and (max-width: 1080px) {
-  body {
-    width: 100vw;
-    padding: 0 20px;
-  }
-
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   header {
     width: 100%;
   }
@@ -693,23 +721,6 @@ footer a {
     margin: 7px 0;
   }
   /* ACTIVITE TABLET */
-
-  /* FOOTER MOBILE */
-  footer {
-    width: 100%;
-    margin: 0;
-    padding-top: 40px;
-    background-color: #f2f2f2;
-  }
-  .links-footer {
-    margin: auto;
-    width: auto;
-  }
-}
-
-/* BREAK POINT ESTHETIC */
-
-@media screen and (min-width: 768px) and (max-width: 1211px) {
   #activites {
     width: 100%;
     margin: 35px 0 30px 0;
@@ -739,5 +750,13 @@ footer a {
   }
   .activite-card {
     max-height: 190px;
+  }
+
+  /* FOOTER TABLET */
+  .links-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 360px;
   }
 }
