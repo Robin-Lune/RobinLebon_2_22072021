@@ -210,6 +210,9 @@ header {
   border-radius: 20px;
   height: auto;
 }
+.container--hebergement {
+  flex: 2;
+}
 
 .container__title {
   font-size: 1.4rem;
@@ -220,7 +223,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   padding: 0 15px 0 15px;
 }
@@ -238,10 +241,10 @@ header {
 }
 
 .card-container__card {
-  width: 245px;
+  width: 28%;
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: 15px 0;
   background-color: rgb(253, 253, 253);
   border-radius: 20px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
@@ -299,6 +302,7 @@ header {
 .container--populaire {
   margin-left: 40px;
   width: 410px;
+  flex: 1;
   height: auto;
 }
 
@@ -635,7 +639,7 @@ footer a {
 }
 
 /* STYLE TABLET */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1215px) {
   header {
     width: 100%;
   }
@@ -680,8 +684,9 @@ footer a {
   }
 
   .container--hebergement .card-container__card {
-    width: 280px;
-    margin: 15px auto;
+    width: 30%;
+    min-width: 300px;
+    margin: 15px 10px;
   }
 
   .image-container--populaire {
